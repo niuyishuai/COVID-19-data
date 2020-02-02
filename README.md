@@ -20,6 +20,8 @@
 
 [坐标拾取](http://api.map.baidu.com/lbsapi/getpoint/index.html)
 
+## 疫情动态
+
 [百度迁徙](https://qianxi.baidu.com/?from=shoubai#city=420100)
 
 [百度实时疫情数据](https://voice.baidu.com/act/newpneumonia/newpneumonia)
