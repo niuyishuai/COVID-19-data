@@ -2,9 +2,11 @@
  Collection of Wuhan-nCov Data
  
  
-## 病情预测
+## 疫情预测
 
 [wuhan-nCov-predictor](https://github.com/niuyishuai/wuhan-nCov-predictor)
+
+[stnn](https://github.com/niuyishuai/STNN_Disease)
 
 ## 数据接口
 
