@@ -8,6 +8,11 @@
 
 [stnn](https://github.com/niuyishuai/STNN_Disease)
 
+## 相关新闻链
+
+[新闻链接](https://github.com/niuyishuai/wuhan-nCov-data/tree/master/news)
+
+
 ## 数据接口
 
 [省市每日历史数据](http://ncov.nosensor.com:8080/api/)
