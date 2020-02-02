@@ -1,6 +1,11 @@
 # wuhan-nCov data
  Collection of Wuhan-nCov Data
  
+ 
+## 病情预测
+
+[wuhan-nCov-predictor](https://github.com/niuyishuai/wuhan-nCov-predictor)
+
 ## 数据接口
 
 [省市每日历史数据](http://ncov.nosensor.com:8080/api/)
