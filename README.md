@@ -17,11 +17,15 @@
 
 [省市每日历史数据](http://ncov.nosensor.com:8080/api/)
 
-[百度迁徙](https://huiyan.baidu.com/migration/cityrank.jsonp?dt=city&id=420100&type=move_out&date=20200128&callback=jsonp_1580257678289_5758459)
+[百度迁徙(直接)](https://huiyan.baidu.com/migration/cityrank.jsonp?dt=city&id=420100&type=move_out&date=20200128&callback=jsonp_1580257678289_5758459)
 
-[丁香园实时疫情](https://service-0gg71fu4-1252957949.gz.apigw.tencentcs.com/release/dingxiangyuan)
+[丁香园实时疫情(间接)](https://service-0gg71fu4-1252957949.gz.apigw.tencentcs.com/release/dingxiangyuan)
 
-[qq历史疫情](https://service-n9zsbooc-1252957949.gz.apigw.tencentcs.com/release/qq)
+[qq历史疫情(间接)](https://service-n9zsbooc-1252957949.gz.apigw.tencentcs.com/release/qq)
+
+[qq历史疫情(直接)](https://view.inews.qq.com/g2/getOnsInfo?name=wuwei_ww_cn_day_counts)
+
+[qq完整历史数据(直接)](https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5)
 
 [百度地图](http://lbsyun.baidu.com/jsdemo.htm#canvaslayer)
 
