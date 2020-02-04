@@ -39,7 +39,7 @@ def migration(level='city',type='move_out',date='20200101'):
         sheet1.write(i+1,2,value,set_style('Times New Roman',220,True))
         i = i+1
     # 判断并生成路径
-    target_path = './wuhannCov/'+level+'/'+type+'/'
+    target_path = './migration/'+level+'/'+type+'/'
     if os.path.exists(target_path)==False:
         os.makedirs(target_path)
     f.save(target_path + date + '.xls')
@@ -64,12 +64,15 @@ def extract_json_data(r):
     sub_str = r.text[s+1:e]
     return json.loads(sub_str)
 
-#%% 定义起止日期
-dateend = datetime.datetime.now()
-datestart = datetime.datetime.strptime('20200101','%Y%m%d')
-while datestart < dateend:
-    for level in ['city','province']:
-        for type in ['move_in','move_out']:
-            date = datestart.strftime('%Y%m%d')
-            migration(level,type,date)
-    datestart+= datetime.timedelta(days=+1)
+#%% download migration data
+def download_data():
+    dateend = datetime.datetime.now()
+    datestart = datetime.datetime.strptime('20200101','%Y%m%d')
+    while datestart < dateend:
+        for level in ['city','province']:
+            for type in ['move_in','move_out']:
+                date = datestart.strftime('%Y%m%d')
+                migration(level,type,date)
+        datestart+= datetime.timedelta(days=+1)
+
+download_data()
