@@ -2,19 +2,16 @@ import requests
 import json
 import xlwt
 import datetime
+import os
 
+#%%
 def migration(level='city',type='move_out',date='20200101'):
     # 执行 API 调用并储存响应
     url = 'http://huiyan.baidu.com/migration/'+level+'rank.jsonp?dt=country&id=0&type='+type+'&date='+date+'&callback=jsonp_1580737583074_8938529'
     r = requests.get(url)
 
     # 转化为 json 数据
-    start1 = '('
-    end1 = ')'
-    s = r.text.find(start1)
-    e = r.text.find(end1)
-    sub_str = r.text[s+1:e]
-    req_data = json.loads(sub_str)
+    req_data = extract_json_data(r)
     # 保存为 json 文件
     # filename = 'wuhan.json'
     # with open(filename,'w')as f:
@@ -41,10 +38,13 @@ def migration(level='city',type='move_out',date='20200101'):
         sheet1.write(i+1,1,province_name,set_style('Times New Roman',220,True))
         sheet1.write(i+1,2,value,set_style('Times New Roman',220,True))
         i = i+1
-    name = './wuhannCov/'+level+'/'+type+'/'+date+'.xls'
-    f.save(name)
+    # 判断并生成路径
+    target_path = './wuhannCov/'+level+'/'+type+'/'
+    if os.path.exists(target_path)==False:
+        os.makedirs(target_path)
+    f.save(target_path + date + '.xls')
 
-# 定义 Excel 属性
+#%% 定义 Excel 属性
 def set_style(name,height,bold=False):
     style = xlwt.XFStyle()
     font = xlwt.Font()
@@ -55,7 +55,16 @@ def set_style(name,height,bold=False):
     style.font = font
     return style
 
-# 定义起止日期
+#%% extract json data
+def extract_json_data(r):
+    start1 = '('
+    end1 = ')'
+    s = r.text.find(start1)
+    e = r.text.find(end1)
+    sub_str = r.text[s+1:e]
+    return json.loads(sub_str)
+
+#%% 定义起止日期
 dateend = datetime.datetime.now()
 datestart = datetime.datetime.strptime('20200101','%Y%m%d')
 while datestart < dateend:
