@@ -15,3 +15,5 @@
 [Novel Coronavirus Information Center](https://www.elsevier.com/connect/coronavirus-information-center)
 
 [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
+
+[翘首以盼的流行病学数据来了|新冠肺炎](https://mp.weixin.qq.com/s?__biz=MzIxNTc4NzU0MQ==&mid=2247494151&idx=2&sn=223fef93383f3e042c572156cde0f3c4&chksm=97905b7da0e7d26b7376f79f2a77add1b2c50bcd315dbc51ad1fe189354157d097da8b79b167&mpshare=1&scene=1&srcid=&sharer_sharetime=1580396797427&sharer_shareid=1c3b4ac84aa42f6bf405164e6731d21f&key=f792e9bfa7650c33023d9bfbc9f5ee25f2a0ef2b0216e462dda8cb589bdcbe5cff61888f15d99592ca9db136a3df0aaf827b6cc3dce0b6cd179982c6b94a3d2ecd034ad084423a4e02cd832a65df40fe&ascene=1&uin=MTY3MjA1ODYyNA%3D%3D&devicetype=Windows+10&version=6208006f&lang=zh_CN&exportkey=AiiCFq%2FEhiQZiomckePcpuA%3D&pass_ticket=zVrIvk%2Bb4t0QXqU7z1wFxsuz%2BWJTNqw7lAZbPCMCPqHMWhQC3kpsel3X4E8rEWD%2F) [[PDF](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316?query=main_nav_lg)]
