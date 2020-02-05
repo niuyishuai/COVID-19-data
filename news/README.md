@@ -11,3 +11,7 @@
 [新冠疫情爆发后，已累计有 54 篇相关研究发表](https://mp.weixin.qq.com/s/W4_rJTEgnuQ4-pe5hU5ysQ)
 
 [The Lancet](https://www.thelancet.com/coronavirus?dgcid=kr_pop-up_tlcoronavirus20)
+
+[Novel Coronavirus Information Center](https://www.elsevier.com/connect/coronavirus-information-center)
+
+[WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
