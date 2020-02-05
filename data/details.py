@@ -47,8 +47,10 @@ def details(level0='province'):
             sheet1.write(i+1,3,dead,set_style('Times New Roman',220,True))
             sheet1.write(i+1,4,cured,set_style('Times New Roman',220,True))
             i = i+1
-        name = './details/'+level+'/'+date+'.xls'
-        f.save(name)
+        target_path = './details/'+level+'/'
+        if os.path.exists(target_path)==False:
+            os.makedirs(target_path)
+        f.save(target_path + date + '.xls')
 
 # 定义 Excel 属性
 def set_style(name,height,bold=False):
