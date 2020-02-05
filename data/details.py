@@ -63,5 +63,8 @@ def set_style(name,height,bold=False):
     style.font = font
     return style
 
-for level in ['city','province']:
-    details(level)
+def download_data():
+    for level in ['city','province']:
+        details(level)
+
+download_data()
