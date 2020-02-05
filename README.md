@@ -35,6 +35,8 @@
 
 [百度迁徙](https://qianxi.baidu.com/?from=shoubai#city=420100)
 
+[腾讯迁移](https://heat.qq.com/)
+
 [百度实时疫情数据](https://voice.baidu.com/act/newpneumonia/newpneumonia)
 
 [丁香园实时疫情数据](https://3g.dxy.cn/newh5/view/pneumonia)
