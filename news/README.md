@@ -9,3 +9,5 @@
 [新冠病毒与人类SARS大不同，4个细节需注意](https://www.thepaper.cn/newsDetail_forward_5723351)
 
 [新冠疫情爆发后，已累计有 54 篇相关研究发表](https://mp.weixin.qq.com/s/W4_rJTEgnuQ4-pe5hU5ysQ)
+
+[The Lancet](https://www.thelancet.com/coronavirus?dgcid=kr_pop-up_tlcoronavirus20)
