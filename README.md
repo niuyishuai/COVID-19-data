@@ -17,6 +17,8 @@
 
 [省市每日历史数据](http://ncov.nosensor.com:8080/api/)
 
+[省市每日历史数据2](https://lab.isaaclin.cn/nCoV/)
+
 [百度迁徙(直接)](https://huiyan.baidu.com/migration/cityrank.jsonp?dt=city&id=420100&type=move_out&date=20200128&callback=jsonp_1580257678289_5758459)
 
 [丁香园实时疫情(间接)](https://service-0gg71fu4-1252957949.gz.apigw.tencentcs.com/release/dingxiangyuan)
