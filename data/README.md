@@ -3,7 +3,7 @@
 
 - **数据搜集进度**
 - [x] MATLAB调用python脚本(`callpython.m`)
-- [x] 疫情每日数据(脚本`details.py`, `update-migration.py` **市级的死亡和治愈数据有问题**)
+- [x] 疫情每日数据(脚本`details.py`, `update-details.py` **市级的死亡和治愈数据有问题**)
 - [x] 各省市日迁移数据（脚本`migration.py`,`update-migration.py`**目前只有迁移比例，还缺迁移规模指数**）
 - [x] 主要城市医疗机机构数据
   - [x] 医疗机构数，医务人员数和床位数(2018年数据和部分2017年数据, **2019年数据缺失**)
