@@ -1,7 +1,12 @@
 # wuhan-nCov data
  Collection of Wuhan-nCov Data
  
- 
+
+# Citation
+ If you use our data in your project, please cite our site, Thank you!
+ [https://github.com/niuyishuai/wuhan-nCov-data](https://github.com/niuyishuai/wuhan-nCov-data)
+ 如果您在项目中是使用了我们整理的数据，请引用我们的网站链接，数据整理不易，谢谢！
+
 ## 疫情预测
 
 [wuhan-nCov-predictor](https://github.com/niuyishuai/wuhan-nCov-predictor)
