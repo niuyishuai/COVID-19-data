@@ -322,7 +322,7 @@ def compact():                                                                  
             path_rank = './migration_baidu/迁入迁出比例/按地区_时间总表/'+province_name+'/'
             if os.path.exists(path_rank) == False:
                 os.makedirs(path_rank)
-            f_pro_rank.save(path_rank+'省级总表_截止'+date_had+'.xls')
+            f_pro_rank.save(path_rank+'省级总表_'+date_had+'.xls')
         del prolist
 
         for city_id in data_id['0,'+province_id]:
@@ -354,7 +354,7 @@ def compact():                                                                  
                 for i in range(len(citylist)):
                     for k in range(len(citylist[i])):
                         sheet_city_rank.write(i+1,k,citylist[i][k],default)
-                f_pro_rank.save(path_rank+city_name+'_截止'+date_had+'.xls')
+                f_city_rank.save(path_rank+city_name+'_'+date_had+'.xls')
             del citylist
 
 download_data()
