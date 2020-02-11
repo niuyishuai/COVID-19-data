@@ -10,12 +10,13 @@ def details(level0='province'):
     with open('./details/details.json') as f:
         req_data = json.load(f)[level0]
     default = set_style('Times New Roman',220,True)
+    date_index = 0
     if datetime.datetime.strptime(req_data[0]['Time'],'%Y-%m-%d') >= datestart:
         for i in range(len(req_data)):                             
             if datetime.datetime.strptime(req_data[i]['Time'],'%Y-%m-%d') >= datestart:
                 date_index = i
         print("Need to update ",date_index+1,"-day data")
-    else: print("Don't need to update data")
+    else: print("Don't need to update data");exit(0)
 
     for i in range(date_index+1):                              
         index = date_index-i                                   # 从起始日期开始更新
@@ -119,12 +120,12 @@ def set_style(name,height,bold=False):                         # 定义 Excel �
     return style
 
 def update_data():                                             # 更新数据
-    # print("connecting to API ...")
-    # url = 'http://ncov.nosensor.com:8080/api/'                 # 下载 API 数据并保存
-    # headers = {'connection':'close'}
-    # r = requests.get(url,headers,stream = True)
-    # with open('./details/details.json','w') as f:
-    #     f.write(r.text)
+    print("connecting to API ...")
+    url = 'http://ncov.nosensor.com:8080/api/'                 # 下载 API 数据并保存
+    headers = {'connection':'close'}
+    r = requests.get(url,headers,stream = True)
+    with open('./details/details.json','w') as f:
+        f.write(r.text)
     for level0 in ['city','province']:
         details(level0)
 
