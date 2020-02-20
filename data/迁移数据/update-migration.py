@@ -1,12 +1,21 @@
 # coding:UTF-8
-import requests,json,os,datetime
+import requests,json,os,datetime,time
 import xlwt,xlrd
 from xlutils.copy import copy
 
 # 更新数据至总表分表（可以从头更新）
 def migration(level='city',type='move_out',date='20200101'):
     url = 'http://huiyan.baidu.com/migration/'+level+'rank.jsonp?dt=country&id=0&type='+type+'&date='+date+'&callback=jsonp_1580737583074_8938529'
-    r = requests.get(url)
+    y = False;z = 0
+    while y == False:
+        try:
+            r = requests.get(url)
+            y = True
+        except Exception:
+            print('10秒后重试')
+            time.sleep(10)
+            z += 1
+            if z==10:print('请求失败');exit(0)
     req_data = extract_json_data(r)                            # 调用API并转化为 json 数据
 
     default = set_style('Times New Roman',220,True)

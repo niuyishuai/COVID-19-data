@@ -1,5 +1,5 @@
 # coding:UTF-8
-import requests,json,os,datetime
+import requests,json,os,datetime,time
 import xlwt,xlrd
 from xlutils.copy import copy
 
@@ -122,8 +122,19 @@ def set_style(name,height,bold=False):                         # 定义 Excel �
 def update_data():                                             # 更新数据
     print("connecting to API ...")
     url = 'http://ncov.nosensor.com:8080/api/'                 # 下载 API 数据并保存
-    headers = {'connection':'close'}
-    r = requests.get(url,headers,stream = True)
+    headers = {
+    'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    }
+    y = False;z = 0
+    while y == False:
+        try:
+            r = requests.get(url,headers,stream = True,timeout = 1)
+            y = True
+        except Exception:
+            print('10秒后重试')
+            time.sleep(10)
+            z += 1
+            if z == 10:print('请求失败');exit(-1)
     with open('./details/details.json','w') as f:
         f.write(r.text)
     for level0 in ['city','province']:
