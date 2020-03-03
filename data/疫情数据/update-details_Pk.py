@@ -20,8 +20,11 @@ def download_data():
     # z = 0;y = False
     # while y == False:
     #     try:
-    #         url = 'https://raw.githubusercontent.com/tanshaocong/tanshaocong.github.io/master/2019-nCoV/map.csv'
-    #         r = requests.get(url,timeout=1)
+    #         url = 'https://vis.ucloud365.com/ncov/data/map.csv'
+    #         headers = {
+    #             'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'
+    #         }
+    #         r = requests.get(url,headers=headers,timeout=1)
     #         with open('map.csv','w') as data:
     #             data.write(r.text)
     #         y = True
