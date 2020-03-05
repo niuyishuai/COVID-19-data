@@ -275,6 +275,18 @@ def compact():                                                                  
                     city_index.insert(2,province_name)
                     citylist.append(city_index)
                 citylist_index.append(citylist)
+        if province_name in ['北京','天津','上海','重庆','香港特别行政区','澳门特别行政区']:
+            data_city = xlrd.open_workbook(path+'省级总表.xls')
+            table_city = data_city.sheets()[0]
+            nrows_city = table_city.nrows
+            citylist = []
+            print("添加 ",path+'省级总表.xls')
+            for i in range(1,nrows_city):
+                city_index = table_city.row_values(i,start_colx=0,end_colx=None)
+                city_index.insert(1,province_name)
+                city_index.insert(2,province_name)
+                citylist.append(city_index)
+            citylist_index.append(citylist)
 
     f_pro_index = xlwt.Workbook()
     sheet_pro_index = f_pro_index.add_sheet('全国省级规模指数',cell_overwrite_ok=True)
