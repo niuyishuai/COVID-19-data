@@ -306,8 +306,8 @@ def compact():                                                                  
     for i in range(len(row0)):
         sheet_city_index.write(0,i,row0[i],default)
     num_city_index = len(citylist_index)
-    for i in range(len(citylist_index[0])):
-        for j in range(num_city_index):
+    for j in range(num_city_index):
+        for i in range(len(citylist_index[j])):
             for k in range(len(citylist_index[j][i])):
                 sheet_city_index.write(i*num_city_index+j+1,k,citylist_index[j][i][k],default)
     f_city_index.save('./主要城市/迁入迁出指数/市级_全国总表.xls')

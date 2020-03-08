@@ -7,34 +7,34 @@ def check(pro_list,pro_detail):
     return pro_list
 
 def download_data():
-    # z = 0;y = False
-    # while y == False:
-    #     try:
-    #         url = 'http://ncov.deepeye.tech/data/data/chinadistrict_level.json'
-    #         r = requests.get(url,timeout=1)
-    #         with open('Tsinghua_district.json','w') as data:
-    #             data.write(r.text)
-    #         y = True
-    #         print('地区数据下载完成')
-    #     except Exception:
-    #         print('10秒后重试')
-    #         time.sleep(10)
-    #         z+=1
-    #         if z==10:print("请求失败");exit(-1)
-    # z = 0;y = False
-    # while y == False:
-    #     try:
-    #         url = 'http://ncov.deepeye.tech/data/data/chinaprovince_level.json'
-    #         r = requests.get(url,timeout=1)
-    #         with open('Tsinghua_province.json','w') as data:
-    #             data.write(r.text)
-    #         y = True
-    #         print('省级数据下载完成')
-    #     except Exception:
-    #         print('10秒后重试')
-    #         time.sleep(10)
-    #         z+=1
-    #         if z==10:print("请求失败");exit(-1)
+    z = 0;y = False
+    while y == False:
+        try:
+            url = 'http://ncov.deepeye.tech/data/data/chinadistrict_level.json'
+            r = requests.get(url,timeout=1)
+            with open('Tsinghua_district.json','w') as data:
+                data.write(r.text)
+            y = True
+            print('地区数据下载完成')
+        except Exception:
+            print('10秒后重试')
+            time.sleep(10)
+            z+=1
+            if z==10:print("请求失败");exit(-1)
+    z = 0;y = False
+    while y == False:
+        try:
+            url = 'http://ncov.deepeye.tech/data/data/chinaprovince_level.json'
+            r = requests.get(url,timeout=1)
+            with open('Tsinghua_province.json','w') as data:
+                data.write(r.text)
+            y = True
+            print('省级数据下载完成')
+        except Exception:
+            print('10秒后重试')
+            time.sleep(10)
+            z+=1
+            if z==10:print("请求失败");exit(-1)
 
     with open('Tsinghua_province.json') as f:
         data = json.load(f)

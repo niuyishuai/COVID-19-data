@@ -17,22 +17,22 @@ def get_str(a_int):
     return a_str
 
 def download_data():
-    z = 0;y = False
-    while y == False:
-        try:
-            url = 'https://vis.ucloud365.com/ncov/data/map.csv'
-            headers = {
-                'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'
-            }
-            r = requests.get(url,headers=headers,timeout=1)
-            with open('map.csv','w') as data:
-                data.write(r.text)
-            y = True
-        except Exception:
-            print('10秒后重试')
-            time.sleep(10)
-            z+=1
-            if z==10:print("请求失败");exit(-1)
+    # z = 0;y = False
+    # while y == False:
+    #     try:
+    #         url = 'https://vis.ucloud365.com/ncov/data/map.csv'
+    #         headers = {
+    #             'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'
+    #         }
+    #         r = requests.get(url,headers=headers,timeout=1)
+    #         with open('map.csv','w') as data:
+    #             data.write(r.text)
+    #         y = True
+    #     except Exception:
+    #         print('10秒后重试')
+    #         time.sleep(10)
+    #         z+=1
+    #         if z==10:print("请求失败");exit(-1)
 
     dictlist = {}
 
