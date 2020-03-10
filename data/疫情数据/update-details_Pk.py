@@ -68,6 +68,7 @@ def download_data():
                         dictlist[date][row[1]] = {row[2]:{row[3]:[get_str(row[4]),get_str(row[6]),get_str(row[5]),get_str(row[4]),get_str(row[6]),get_str(row[5])]}}
                 else:
                     dictlist[date] = {row[1]:{row[2]:{row[3]:[get_str(row[4]),get_str(row[6]),get_str(row[5]),get_str(row[4]),get_str(row[6]),get_str(row[5])]}}}
+                if row[1] == '':del dictlist[date][row[1]]
                 date_last = date
         with open('map.json','w') as f:
             f.write(json.dumps(dictlist))
