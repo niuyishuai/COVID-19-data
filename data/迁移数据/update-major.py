@@ -134,7 +134,7 @@ def extract_json_data(r):                                                       
     return json.loads(sub_str)
 
 def download_data():
-    dateend = datetime.datetime.now()+datetime.timedelta(days=-2)
+    dateend = datetime.datetime.now()+datetime.timedelta(days=-3)
     endDate = datetime.datetime.strftime(dateend,'%Y%m%d')
     path_have = './主要城市/迁入迁出比例/按地区_时间总表/上海/'
     haveDate = '20191231'
@@ -312,7 +312,7 @@ def compact():                                                                  
                 sheet_city_index.write(i*num_city_index+j+1,k,citylist_index[j][i][k],default)
     f_city_index.save('./主要城市/迁入迁出指数/市级_全国总表.xls')
 
-    dateend = datetime.datetime.now()+datetime.timedelta(days=-2)
+    dateend = datetime.datetime.now()+datetime.timedelta(days=-3)
     haveDate = '20191231'
     path_have = './主要城市/迁入迁出比例/按地区_时间总表/上海/'
     haveDate = '20191231'
