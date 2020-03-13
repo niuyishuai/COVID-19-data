@@ -40,6 +40,7 @@ def download_data():
         f_csv = csv.reader(f)
         datelist = ['1月10日']
         date_last = '1月10日'
+        N_add = 0
         for row in f_csv:
             if row[1] != '类别':
                 date = row[0]
@@ -52,7 +53,7 @@ def download_data():
                                     dictlist[date][level][province][city][i] = ''
                     datelist.append(date)
                 if date in dictlist:
-                    if row[1] in dictlist[date]:
+                    if (row[1] in dictlist[date])&(row[1]!='国家级'):
                         if row[2] in dictlist[date][row[1]]:
                             if row[3] in dictlist[date][row[1]][row[2]]:
                                 details_last = dictlist[date][row[1]][row[2]][row[3]]
@@ -64,8 +65,15 @@ def download_data():
                                 dictlist[date][row[1]][row[2]][row[3]] = [get_str(row[4]),get_str(row[6]),get_str(row[5]),get_str(row[4]),get_str(row[6]),get_str(row[5])]
                         else:
                             dictlist[date][row[1]][row[2]] = {row[3]:[get_str(row[4]),get_str(row[6]),get_str(row[5]),get_str(row[4]),get_str(row[6]),get_str(row[5])]}
-                    else:
+                    elif (row[1] in dictlist[date]) == False:
                         dictlist[date][row[1]] = {row[2]:{row[3]:[get_str(row[4]),get_str(row[6]),get_str(row[5]),get_str(row[4]),get_str(row[6]),get_str(row[5])]}}
+                    if (row[1]=='省级')&(date!='1月10日'):
+                        dictlist[date]['国家级'][''][''][0] = get_str(get_int(dictlist[date]['国家级'][''][''][0])+get_int(row[4]))
+                        dictlist[date]['国家级'][''][''][1] = get_str(get_int(dictlist[date]['国家级'][''][''][1])+get_int(row[6]))
+                        dictlist[date]['国家级'][''][''][2] = get_str(get_int(dictlist[date]['国家级'][''][''][2])+get_int(row[5]))
+                        dictlist[date]['国家级'][''][''][3] = get_str(get_int(dictlist[date]['国家级'][''][''][3])+get_int(row[4]))
+                        dictlist[date]['国家级'][''][''][4] = get_str(get_int(dictlist[date]['国家级'][''][''][4])+get_int(row[6]))
+                        dictlist[date]['国家级'][''][''][5] = get_str(get_int(dictlist[date]['国家级'][''][''][5])+get_int(row[5]))
                 else:
                     dictlist[date] = {row[1]:{row[2]:{row[3]:[get_str(row[4]),get_str(row[6]),get_str(row[5]),get_str(row[4]),get_str(row[6]),get_str(row[5])]}}}
                 if row[1] == '':del dictlist[date][row[1]]
