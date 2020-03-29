@@ -11,7 +11,7 @@
 
 ## 疫情预测
 
-[wuhan-nCov-predictor](https://github.com/niuyishuai/wuhan-nCov-predictor)
+[COVID-19-predictor](https://github.com/niuyishuai/COVID-19-predictor)
 
 [stnn](https://github.com/niuyishuai/STNN_Disease)
 
@@ -51,6 +51,12 @@
 [丁香园实时疫情数据](https://3g.dxy.cn/newh5/view/pneumonia)
 
 [qq 实时疫情数据](https://news.qq.com/zt2020/page/feiyan.htm)
+
+[COVID-19 in US and Canada](https://coronavirus.1point3acres.com/en?from=singlemessage?code=061d7GMA0J3U8j2UAPMA0M3AMA0d7GMs?code=033cfXU22DNfXT0l7KW223H4V22cfXUl)
+
+[约翰霍普金斯](https://systems.jhu.edu) - [全球数据](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+
+[Kaggle数据](https://www.kaggle.com/?utm_medium=email&utm_source=intercom&utm_campaign=kaggle+header)
 
 ## 相关工具
 
