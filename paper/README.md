@@ -15,3 +15,10 @@
 [Novel Coronavirus Information Center](https://www.elsevier.com/connect/coronavirus-information-center)
 
 [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
+
+[Coronavirus 传播的动力学模型](https://mp.weixin.qq.com/s/rn0s-4lCrRuWyZZKubWG3A)
+
+[New york times](https://www.nytimes.com/interactive/2020/03/20/us/coronavirus-model-us-outbreak.html?from=timeline&isappinstalled=0)
+
+[新冠疫情的全球蔓延对中国经济影响的分析](https://mp.weixin.qq.com/s/bgua0CdXsTYCALVaq1wkow)
+
