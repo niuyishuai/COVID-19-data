@@ -1,5 +1,5 @@
 # COVID-19 data
- Collection of Wuhan-nCov Data
+ Collection of COVID-19 Data
  
 
 # Citation
