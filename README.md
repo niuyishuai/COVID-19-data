@@ -40,6 +40,8 @@
 
 [坐标拾取](http://api.map.baidu.com/lbsapi/getpoint/index.html)
 
+[Kaggle数据](https://www.kaggle.com/?utm_medium=email&utm_source=intercom&utm_campaign=kaggle+header)
+
 ## 疫情动态
 
 [百度迁徙](https://qianxi.baidu.com/?from=shoubai#city=420100)
@@ -55,8 +57,6 @@
 [COVID-19 in US and Canada](https://coronavirus.1point3acres.com/en?from=singlemessage?code=061d7GMA0J3U8j2UAPMA0M3AMA0d7GMs?code=033cfXU22DNfXT0l7KW223H4V22cfXUl)
 
 [约翰霍普金斯](https://systems.jhu.edu) - [全球数据](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
-
-[Kaggle数据](https://www.kaggle.com/?utm_medium=email&utm_source=intercom&utm_campaign=kaggle+header)
 
 ## 相关工具
 
