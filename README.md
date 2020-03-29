@@ -22,7 +22,7 @@
 
 ## 数据接口
 
-[省市每日历史数据](http://ncov.nosensor.com:8080/api/)
+~~[省市每日历史数据]~(http://ncov.nosensor.com:8080/api/)~~
 
 [省市每日历史数据2](https://lab.isaaclin.cn/nCoV/)
 
