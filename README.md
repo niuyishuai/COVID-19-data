@@ -52,11 +52,9 @@
 
 [qq 实时疫情数据](https://news.qq.com/zt2020/page/feiyan.htm)
 
-[约翰霍普金斯](https://systems.jhu.edu)
-
 [COVID-19 in US and Canada](https://coronavirus.1point3acres.com/en?from=singlemessage?code=061d7GMA0J3U8j2UAPMA0M3AMA0d7GMs?code=033cfXU22DNfXT0l7KW223H4V22cfXUl)
 
-[全球数据](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+[约翰霍普金斯](https://systems.jhu.edu)[全球数据](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
 
 [Kaggle数据](https://www.kaggle.com/?utm_medium=email&utm_source=intercom&utm_campaign=kaggle+header)
 
