@@ -11,7 +11,7 @@
 
 ## 疫情预测
 
-[wuhan-nCov-predictor](https://github.com/niuyishuai/wuhan-nCov-predictor)
+[COVID-19-predictor](https://github.com/niuyishuai/COVID-19-predictor)
 
 [stnn](https://github.com/niuyishuai/STNN_Disease)
 
