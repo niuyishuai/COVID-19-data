@@ -1,0 +1,22 @@
+Healthcare System,Acronym,City,Country,Patient Population,Hospitals,Beds,Annual Discharges,Latitude,Longitude,Country Code
+Assistance Publique - Hôpitaux de Paris,APHP,Paris,France,Adult & Pediatric,39,"20,098","1,375,538",48.856613,2.3522220000000003,250
+Bordeaux University Hospital,FRBDX,Bordeaux,France,Adult & Pediatric,3,"2,676","130,033",44.84,-0.58,250
+Erlangen University Hospital ,UKER,Erlangen,Germany,Adult & Pediatric,1,"1,400",65000,49.583333,11.016667,276
+"Medical Center, University of Freiburg",UKFR,Freiburg,Germany,Adult & Pediatric,1,"1,660","71,500",47.983333,7.85,276
+University Medicine Mannheim,UMM,Mannheim,Germany,Adult & Pediatric,1,"1,352","50,748",49.488889,8.469167,276
+"ICSM Pavia, Lumezzane/Brescia & Milano Hospitals ","ICSM1, 5 & 20","Pavia, Lumezzane/Brescia & Milano",Italy,Adult,3,426,"8,616",45.183333000000005,9.15,380
+Policlinico di Milano,POLIMI,Milano,Italy,Adult & Pediatric,1,900,"40,000",45.466944,9.19,380
+ASST Papa Giovanni XXIII Bergamo,HPG23,Bergamo,Italy,Adult & Pediatric,1,"1,080","45,000",45.695,9.67,380
+National University Hospital,NUH,Singapore,Singapore,Adult & Pediatric,1,"1,556","100,977",1.283333,103.833333,702
+Boston Children’s Hospital ,BCH,"Boston, MA",USA,Pediatric,1,404,"28,000",42.358056,-71.063611,840
+Beth Israel Deaconess Medical Center,BIDMC,"Boston, MA",USA,Adult,1,673,"40,752",42.358056,-71.063611,840
+Children’s Hospital of Philadelphia,CHOP,"Philadelphia, PA",USA,Pediatric,1,564,"25,406",39.952778,-75.163611,840
+University of Kansas Medical Center,KUMC,"Kansas City, KS",USA,Adult & Pediatric,1,794,"54,659",39.099722,-94.578333,840
+Mayo Clinic,MAYOC,"Rochester, MN",USA,Adult & Pediatric,1,"2,059","100,000",44.0234,-92.46295,840
+Mass General Brigham (Partners Healthcare),MGB,"Boston, MA",USA,Adult & Pediatric,10,"3,418","163,521",42.358056,-71.063611,840
+Medical University of South Carolina ,MUSC,"Charleston, SC",USA,Adult & Pediatric,8,"1,600","55,664",32.783333,-79.93333299999999,840
+University of Pennsylvania,UPenn,"Philadelphia, PA",USA,Adult,5,"2,469","118,188",39.952778,-75.163611,840
+"University of California, LA",UCLA,"Los Angeles, CA",USA,Adult & Pediatric,2,786,"40,526",34.05,-118.25,840
+University of Michigan,UMICH,"Ann Arbor, MI",USA,Adult & Pediatric,3,"1,000","49,008",42.281389000000004,-83.748333,840
+University of North Carolina at Chapel Hill,UNC,"Chapel Hill, NC",USA,Adult & Pediatric,11,"3,095","52,000",35.913139,-79.055806,840
+UT Southwestern Medical Center ,UTSW,"Dallas, TX",USA,Adult,1,608,"26,905",32.779167,-96.80888900000001,840
