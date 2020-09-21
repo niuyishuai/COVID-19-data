@@ -12,9 +12,11 @@ This project is partially supported by Shanghai Jiao Tong University (Grant 2020
 
 ## 疫情预测
 
-[COVID-19-predictor](https://github.com/niuyishuai/COVID-19-predictor)
+[STNN](https://github.com/wtding1998/STNN_nCov)
 
-[stnn](https://github.com/niuyishuai/STNN_Disease)
+[RNN](https://github.com/wtding1998/RNN_nCov)
+
+[COVID-19-predictor](https://github.com/niuyishuai/COVID-19-predictor)
 
 ## 相关新闻链
 
