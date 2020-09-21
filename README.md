@@ -1,6 +1,7 @@
 # COVID-19 data
  Collection of COVID-19 Data
  
+This project is partially supported by Shanghai Jiao Tong University (Grant 2020RK10), National Natural Science Foundation of China (Grant 11601327) and Key Construction National "985" Program of China (Grant WF220426001).
 
 # Citation
  If you use our data in your project, please cite our site, Thank you!
