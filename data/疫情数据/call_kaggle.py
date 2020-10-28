@@ -10,7 +10,8 @@ def get_data(Region='Mainland China',level='province',start_time='20200122',end_
     # end_time:   str, the last date with form "%Y%m%d", default value = 'last_observe'
     # return data_dict = {date:[[province_1,Confirmed,Deaths,Recovered],...]} (for country level, province_1 = Region)
 
-    df = pd.read_csv('covid_19_data.csv',error_bad_lines=False)
+    check_dataset()
+    df = pd.read_csv('./nCov/covid_19_data.csv',error_bad_lines=False)
     if (Region in list(df['Country/Region'])) == False:
         print('Region name error')
         exit(-1)
@@ -72,7 +73,8 @@ def get_data(Region='Mainland China',level='province',start_time='20200122',end_
 def get_name(Region='all'):
     # Region: str, country name or 'all'
     # return namelist = [province_1,...], if Region = 'all', namelist = [country_1,...]
-    df = pd.read_csv('covid_19_data.csv',error_bad_lines=False)
+    check_dataset()
+    df = pd.read_csv('./nCov/covid_19_data.csv',error_bad_lines=False)
     if Region == 'all':
         group_1 = df['Country/Region']
         namelist = []
@@ -101,5 +103,12 @@ def get_name(Region='all'):
             csv_writer.writerow([name])
     return namelist
 
+def check_dataset():
+    filepath = './nCov/covid_19_data.csv'
+    if not os.path.exists(filepath):
+        print('Downloading covid_19_data.csv')
+        os.system('git clone https://github.com/hjp3268/nCov.git')
+
 if __name__ == "__main__":
-    get_data(Region='France',end_time='20200124')
+    get_name('all')
+    # get_data(Region='US',level='province',start_time='20200122',end_time='20200124')
