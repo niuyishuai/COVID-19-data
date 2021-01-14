@@ -4,4 +4,6 @@
 
 - 气象数据主要包含温度、湿度、空气质量指数（外国无 aqi 数据），数据来源 nowapi，脚本详见服务器`update-tianqi-foreign.py`
 
-- 疫情数据中主要使用kaggle数据集（实际上来源于约翰斯霍普金斯数据），调用数据可用脚本`call_kaggle.py`。`原api`数据分别为北大、清华可视化使用数据，已停止更新。
+- [x]疫情数据中主要使用kaggle数据集（实际上来源于 John Hopkins 数据），调用数据可用脚本 `call_kaggle.py`。`原api`数据分别为北大、清华可视化使用数据，已停止更新。
+
+- 疫情数据主要使用 John Hopkins 数据，调用数据可用脚本 `call.py`。
