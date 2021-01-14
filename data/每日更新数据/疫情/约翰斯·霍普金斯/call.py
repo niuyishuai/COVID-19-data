@@ -3,6 +3,7 @@
 # for all files, clone https://github.com/CSSEGISandData/COVID-19.git
 import datetime,os,csv
 import pandas as pd
+from sys import argv
 
 def get_data(Region='France',level='country'):
     # Region:     str, the name of Country/Region, default value = 'France'
@@ -84,4 +85,13 @@ def check_dataset():
 
 if __name__ == "__main__":
     # get_name('France')
-    get_data(Region='Italy',level='country')
+
+    if len(argv) > 1:
+        region = argv[1]
+        if len(argv) > 2:
+            level = argv[2]
+            get_data(region,level)
+        else:
+            get_data(region)
+    else:
+        get_data()
