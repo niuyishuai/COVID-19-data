@@ -94,4 +94,4 @@ if __name__ == "__main__":
         else:
             get_data(region)
     else:
-        get_data()
+        get_data('United Kingdom')
