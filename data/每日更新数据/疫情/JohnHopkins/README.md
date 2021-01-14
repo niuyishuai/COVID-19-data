@@ -24,6 +24,8 @@
 
 ## John Hopkins 数据介绍
 
+# 美国的治愈数据从 `2020.12.14` 开始缺失！！
+
 - 源文件 `./time_series_covid19_confirmed_global.csv`, `./time_series_covid19_deaths_global.csv`, `./time_series_covid19_recovered_global.csv`
     - 数据来源于 `https://github.com/CSSEGISandData/COVID-19.git`
     - 格式为 `csv` 文件，分隔符为 `,`
