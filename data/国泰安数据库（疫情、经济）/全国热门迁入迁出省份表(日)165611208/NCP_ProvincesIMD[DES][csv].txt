@@ -1,0 +1,5 @@
+﻿SgnDate [统计日期] - 
+ProvinceCode [省份代码] - 
+ProvinceName [省份名称] - 
+IMigrantRate [迁入人口比例(%)] - 迁入人口数量占全国迁入人口数量的比例
+EMigrantRate [迁出人口比例(%)] - 迁出人口数量占全国迁出人口数量的比例

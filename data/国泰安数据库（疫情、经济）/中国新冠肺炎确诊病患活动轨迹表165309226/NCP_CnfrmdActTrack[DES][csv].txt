@@ -1,0 +1,13 @@
+﻿ProvinceCode [省份代码] - 
+ProvinceName [省份名称] - 
+CityCode [城市代码] - 
+CityName [城市名称] - 
+CountyCode [县/区代码] - 
+CountyName [县/区名称] - 
+DeclareDate [发布时间] - 
+ConfirmedNumber [病患编号] - 
+ConfirmedName [病患] - 
+Gender [性别] - 
+Age [年龄] - 
+OtherInfo [其他信息] - 
+behaviortrace [行为轨迹] - 

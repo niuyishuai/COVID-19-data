@@ -1,0 +1,8 @@
+﻿ProvinceCode [省份代码] - 
+ProvinceName [省份名称] - 
+CityCode [城市代码] - 
+CityName [城市名称] - 
+Hospital [医院名称] - 
+HospAddress [医院地址] - 
+IsDesigHosp [是否医疗救治定点医院] - 1=是；0=否
+IsFeverClinic [是否发热门诊] - 1=是；0=否

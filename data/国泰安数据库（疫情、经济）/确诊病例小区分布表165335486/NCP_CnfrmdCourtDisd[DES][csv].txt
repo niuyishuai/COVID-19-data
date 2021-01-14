@@ -1,0 +1,8 @@
+﻿ProvinceCode [省份代码] - 
+ProvinceName [省份名称] - 
+CityCode [城市代码] - 
+CityName [城市名称] - 
+CountyCode [县/区代码] - 
+CountyName [县/区名称] - 
+StayPlace [逗留地点] - 
+StayNumber [逗留人数] - 

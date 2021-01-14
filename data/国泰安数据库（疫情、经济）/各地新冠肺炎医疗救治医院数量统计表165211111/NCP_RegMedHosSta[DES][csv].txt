@@ -1,0 +1,5 @@
+﻿AreaCode [地区代码] - 
+AreaName [地区名称] - 
+MedHospitals [医疗救治医院数量] - 
+DesigHospitals [定点医院数量] - 
+FeverClinics [发热门诊数量] - 
