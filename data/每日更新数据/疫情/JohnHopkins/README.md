@@ -39,7 +39,7 @@
         - 输入参数为国家名（`str`），例如 `'France'`，输出为省/州名称；输入参数为 `'all'`，输出为所有国家名称
         - 输出文件夹 `./name/`，格式为 `csv`
     - 函数 `get_data()`
-        - 参数 `Region=?`，默认为 `'France'`
+        - 参数 `Region=?`，默认为 `'United Kingdom'`
         - 参数 `level=?`， `'province'`：输出省级数据；`'country'`：输出国家整体数据，默认为 `'country'`
         - 输出文件夹 `./data/`，格式为 `csv`，列变量名分别为：日期，（累计）确诊，死亡，治愈，现存确诊
     
