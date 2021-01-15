@@ -33,12 +33,12 @@ def get_data(Region='France',level='country'):
 
     # write to .csv
     if level == 'country':
-        file = data.sum().to_frame()
+        file = data.drop(['Province/Sta20te'],axis=1).sum().to_frame()
         file.columns = ['Confirmed']
         # add Deaths Recovered
-        file['Deaths'] = data1.sum().tolist()
-        file['Recovered'] = data2.sum().tolist()
-
+        file['Deaths'] = data1.drop(['Province/Sta20te'],axis=1).sum().tolist()
+        file['Recovered'] = data2.drop(['Province/Sta20te'],axis=1).sum().tolist()
+        file['CurrentConfirmed'] = file['Confirmed'] - file['Deaths'] - file['Recovered']
         filename = './data/'+Region+'/'+level+'.csv'
         file.to_csv(filename)
     else:
@@ -51,6 +51,7 @@ def get_data(Region='France',level='country'):
             file.columns = ['Confirmed']
             file['Deaths'] = data1.loc[index].tolist()
             file['Recovered'] = data2.loc[index].tolist()
+            file['CurrentConfirmed'] = file['Confirmed'] - file['Deaths'] - file['Recovered']
             filename = './data/'+Region+'/'+str(index)+'.csv'
             file.to_csv(filename)
 

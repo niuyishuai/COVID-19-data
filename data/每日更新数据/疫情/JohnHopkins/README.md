@@ -24,13 +24,14 @@
 
 ## John Hopkins 数据介绍
 
-# 美国的治愈数据从 `2020.12.14` 开始缺失！！
 
 - 源文件 `./time_series_covid19_confirmed_global.csv`, `./time_series_covid19_deaths_global.csv`, `./time_series_covid19_recovered_global.csv`
     - 数据来源于 `https://github.com/CSSEGISandData/COVID-19.git`
     - 格式为 `csv` 文件，分隔符为 `,`
     - 列变量名分别为：省/州，国家/地区，纬度，经度，时间，每行为一个国家或地区的数据（部分国家没有子区域的数据）
     - 开始日期 `2020.01.22` 至今
+
+### 美国的数据请调用脚本 `get_US.py`
 
 - 调用脚本 `call.py`
     - 需安装 `pandas`
@@ -40,7 +41,7 @@
     - 函数 `get_data()`
         - 参数 `Region=?`，默认为 `'France'`
         - 参数 `level=?`， `'province'`：输出省级数据；`'country'`：输出国家整体数据，默认为 `'country'`
-        - 输出文件夹 `./data/`，格式为 `csv`，列变量名分别为：日期，（累计）确诊，死亡，治愈
+        - 输出文件夹 `./data/`，格式为 `csv`，列变量名分别为：日期，（累计）确诊，死亡，治愈，现存确诊
     
 
 
