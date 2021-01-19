@@ -8,7 +8,7 @@ def update_US():
 
     date = datetime.datetime.strptime(start_date,'%m/%d/%Y') + datetime.timedelta(days=1)
     start_date = datetime.datetime.strftime(date,'%m-%d-%Y')
-    filename = start_date + '.csv'
+    filename = './csse_covid_19_daily_reports_us/' + start_date + '.csv'
 
     while os.path.exists(filename):
         df = pd.read_csv(filename)[['Confirmed','Deaths','Recovered']].sum().to_frame().transpose().astype(int)
@@ -17,7 +17,7 @@ def update_US():
         df.to_csv(savefile,mode='a',index=0,header=0)
         date += datetime.timedelta(days=1)
         start_date = datetime.datetime.strftime(date,'%m-%d-%Y')
-        filename = start_date + '.csv'
+        filename = './csse_covid_19_daily_reports_us/' + start_date + '.csv'
 
 if __name__ == "__main__":
     update_US()
