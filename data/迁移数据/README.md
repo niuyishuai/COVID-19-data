@@ -28,3 +28,6 @@
     - baseline_type: How baseline movement was calculated pre-COVID-19
 - 网址：https://data.humdata.org/dataset/movement-range-maps
 
+## 美国数据（出）
+- `state.csv`
+
