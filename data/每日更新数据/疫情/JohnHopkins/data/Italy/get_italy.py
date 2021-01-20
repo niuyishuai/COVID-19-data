@@ -1,5 +1,5 @@
 import pandas as pd
-import os,datetime
+import os,datetime,json
 
 def get_distance():
     date = '20200224'
@@ -75,10 +75,52 @@ def get_region_data():
     print(data.T)
     data.T.to_csv('region.csv')
 
+def combine_matrix():
+    # # step1 -- get region_province.json (need to fix one value by hand)
+    # df = pd.read_csv('./dati-province/dpc-covid19-ita-province-20200224.csv').groupby('denominazione_regione')
+    # province_region = {}
+    # for i in df:
+    #     for province in list(i[1]['denominazione_provincia']):
+    #         if province != 'In fase di definizione/aggiornamento':
+    #             province_region[province] = i[0]
+    # with open('region_province.json','w') as f:
+    #     json.dump(province_region,f)
+
+    # step2 -- sum matrix from province to region
+    with open('region_province.json','r') as f:
+        province_region = json.load(f)
+    data_id = pd.read_csv('./id_provinces_it.csv')
+    province_id = dict(zip(data_id['COD_PROV'],data_id['DEN_PCM']))
+    
+    data = pd.read_csv('od_matrix_daily_flows_norm_full_2020_01_18_2020_06_26.csv')
+    nums = list(data['p2'])
+    for i in nums:
+        data['p2'] = data['p2'].replace(i,province_region[province_id[i]])
+    group = data.groupby(['p1','p2']).sum()
+    group.to_csv('od_matrix.csv')
+
+    group = pd.read_csv('od_matrix.csv')
+    nums = list(group['p1'])
+    for i in nums:
+        group['p1'] = group['p1'].replace(i,province_region[province_id[i]])
+    group = group.groupby(['p1','p2']).mean()
+    group.to_csv('od_matrix.csv')    
+
+def get_mobility():
+    # combine_matrix()
+    if not os.path.exists('mobility/'):
+        os.mkdir('mobility/')
+    df = pd.read_csv('od_matrix.csv')
+    date_list = list(df)
+    date_list.remove('p1')
+    date_list.remove('p2')
+    for date in date_list:
+        df_date = df[['p1','p2',date]].pivot(index='p1', columns='p2', values=date).fillna(0)
+        df_date.to_csv('mobility/'+date+'.csv')
 
 
 
-
-get_distance()
+# get_distance()
 # get_province_data()
 # get_region_data()
+get_mobility()
