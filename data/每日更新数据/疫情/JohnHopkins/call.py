@@ -95,4 +95,4 @@ if __name__ == "__main__":
         else:
             get_data(region)
     else:
-        get_data('United Kingdom')
+        get_data('United Kingdom','province')
